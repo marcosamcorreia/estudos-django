@@ -1,0 +1,9 @@
+# Banco de dados local
+db.sqlite3
+
+# Cache Python
+__pycache__/
+*.py[cod]
+
+# Cache dentro de migrations
+**/migrations/__pycache__/
