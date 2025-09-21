@@ -1,0 +1,45 @@
+:root{
+    --color-1:#EEEEEE ;
+    --color-2:#32E0C4 ;
+    --color-3:#0D7377 ;
+    --color-4:#212121 ;
+
+}
+
+body{
+    background-color: var(--color-1);
+    color: var(--color-4);
+    font-family: "Lexend", sans-serif;
+}
+
+a{
+    color: var(--color-3);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--color-4);
+}
+
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--color-2);
+    border-radius: 5px;
+    max-width: 200px;
+    transition: color 0.5s ease;
+    color: var(--color-4);
+    margin: 3px;
+}
+
+li a{
+    color: var(--color-4);
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+li a:hover{
+    color: var(--color-1);
+}

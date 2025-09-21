@@ -1,8 +1,10 @@
+{% load static %}
 <html>
 <head>
     <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'mystyles.css' %}">
 </head>
-<body style="background-color:#66ffff;">
+<body>
     
     {% block content %}
     {% endblock %}
