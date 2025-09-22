@@ -4,11 +4,10 @@
 {% endblock %}
 
 {% block content %}
-    <p><a href="/">HOME</a></p>
     <h1>Members</h1>
     <ul>
         {% for x in mymembers %}
-            <li><a href="details/{{x.id}}">{{x.firstname}} {{x.lastname}} </a></li>
+            <li onclick="window.location = 'details/{{ x.slug }}'">{{ x.firstname }} {{ x.lastname }}</li>
         {% endfor %}
     </ul>
 {% endblock %}
